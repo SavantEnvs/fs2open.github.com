@@ -1,0 +1,4 @@
+$Name: foo ;comment
+/* block */ $Str: "quoted text"
++Opt: 5 6 7
+#End

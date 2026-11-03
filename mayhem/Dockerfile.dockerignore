@@ -1,0 +1,9 @@
+# Bake the FULL repo (including .git history) into the image. Upstream's own .dockerignore
+# drops /.git and /build; this file takes precedence for mayhem/Dockerfile builds.
+out/
+mayhem/out/
+*.o
+*.a
+.DS_Store
+*.swp
+*~
