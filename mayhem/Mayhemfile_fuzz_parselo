@@ -1,0 +1,8 @@
+project: savantenvs/fs2open.github.com
+target: fuzz_parselo
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_parselo/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_parselo
+    libfuzzer: true

@@ -1,0 +1,8 @@
+project: savantenvs/fs2open.github.com
+target: fuzz_encrypt
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_encrypt/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_encrypt
+    libfuzzer: true
